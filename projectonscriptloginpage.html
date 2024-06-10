@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+      body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* height:100vh; */
+            background-image: linear-gradient(95deg,purple,rgb(17, 17, 118));
+            background-size: cover;
+            background-position:center;
+            background-repeat: no-repeat;
+      }
+      #maindiv{
+            background-image: linear-gradient(95deg, rgb(17,17,118),purple);
+            width:1200px;
+            height:600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius:10px;
+            box-shadow:2px 2px 10px black;
+      }
+      .subdiv{
+            background-color:black;
+            /* position: relative; */
+            width:380px;
+            height:400px;
+            border:2px solid black;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow:2px 2px 10px blue;
+            /* font-weight:bolder; */
+            /* overflow: hidden; */
+      }
+      #log{
+            font-size:30px;
+            color:white;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            margin-top:10px;
+      }
+      .input-box {
+       width:100%;
+       height:35px;
+       background: transparent;
+       font-size:20px;
+       border-width:3px;
+        border-style: solid;
+       color:white;
+       border-radius:30px;
+       border-color:blue;
+       font-weight:500;
+       padding:0 0px 8px 10px;
+       text-indent: 10px;
+       
+       
+    }
+    .btn{
+        width:250px;
+        height:45px;
+        color:white;
+        border-width:3px;
+        border-style: solid;
+        /* background:transparent; */
+        border-color:purple;
+        background-color: red;
+        border-radius: 25px;
+        cursor:pointer;
+        font-size:20px;
+        font-weight:bold;
+        margin-left:25px;
+    }
+    .btn:hover{
+        border-color:chartreuse;
+    }
+    </style>
+</head>
+<body>
+    <div id="maindiv">
+        <div class="subdiv">
+            <div>
+               <h1 id="log">LOGIN</h1>
+               <form>
+                <input type="email" placeholder="Enter Your Email" class="input-box">
+                <br><br>
+                <input type="password" placeholder="Password" class="input-box">
+                <br><br>
+                <br><br>
+                <input type="submit" value="Login" class="btn" onclick="fun()" id="a">
+               </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        function fun()
+        {
+            var b=document.getElementById("a").value
+            if(b=="Login")
+            {
+                document.getElementById("a").style.backgroundColor="blue"
+                document.getElementById("a").setAttribute("value","LOGIN")
+            }
+            else
+            {
+                document.getElementById("a").style.backgroundColor="red"
+                document.getElementById("a").setAttribute("value","Login")
+            }
+        }
+    </script>
+</body>
+</html>

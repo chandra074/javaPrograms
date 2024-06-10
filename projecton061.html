@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Document</title>
+    <style>
+       #eyebol{
+               width: 30px;
+               height: 30px;
+               background-color: rgb(31, 10, 115);
+               border-radius: 100%;
+               position: fixed;
+               bottom: 20px;
+               left: 20px;
+
+       }
+       #mainlist{
+        width: 150px;
+        position: absolute;
+        top: -160px;
+        left: -20px;
+        list-style: none;
+        font-size: 18px;
+
+       }
+       .li{
+        width: 100%;
+        background-color: yellow;
+        padding-top: 5px;
+        padding-left: 20px;
+        padding-bottom: 5px;
+        display: none;
+       }
+       .li:hover{
+        background-color: rgb(64, 224, 88);
+       }
+       #sublist{
+        list-style: none;
+       }
+       .sli{
+        background-color: rgb(0, 128, 92);
+        position: relative;
+        left: 110px;
+        bottom: 25px;
+        padding: 5px;
+        display: none;
+       }
+       .sli:hover{
+        background-color: rgb(0, 255, 149);
+       }
+       #car{
+        height: 20px;
+       }
+       #eyebol:hover .li{
+        display: block;
+       }
+       #car:hover .sli{
+        display: block;
+       }
+       
+    </style>
+</head>
+<body>
+    <div id="eyebol">
+        <ul id="mainlist">
+            <li class="li" id="car">cars 
+            <ul id="sublist">
+                <li class="sli" id="a">BMW</li>
+                <li class="sli" id="b">Audi</li>
+                <li class="sli" id="c">Lambo</li>
+                <li class="sli" id="d">Porche</li>
+            </ul>
+            
+            </li>
+            <li class="li">Bikes</li>
+            <li class="li">Trucks</li>
+            <li class="li">Jet</li>
+            <li class="li">Chopers</li>
+           
+        </ul>
+    </div>
+</body>
+</html>

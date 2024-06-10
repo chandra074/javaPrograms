@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+       
+        #maindiv{
+            width: 100%;
+            height: 1050px;
+            background-color: yellow;
+
+        }
+        div{
+            width: 100px;
+            height: 90px;
+            background-color: red;
+            margin-top: 20px;
+            transition: all 1s;
+            font-size: 30px;
+            color: white;
+        }
+        #maindiv:hover div{
+            margin-left: 80%;
+        }
+        #a{
+            transition-timing-function: ease;
+        }
+        #b{
+            transition-timing-function: linear;
+        }
+        #c{
+            transition-timing-function: ease-in;
+        }
+        #d{
+            transition-timing-function: ease-out;
+        }
+        #e{
+            transition-timing-function: ease-in-out;
+        }
+        #f{
+            transition-timing-function: ease;
+            transition-delay: 3s;
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="maindiv">
+        <div id="a">ease</div>
+        <div id="b">linear</div>
+        <div id="c"> ease-in</div>
+        <div id="d">ease-out</div>
+        <div id="e">ease-in-out</div>
+        <div id="f">ease</div>
+    </div>
+</body>
+</html>
